@@ -39,7 +39,7 @@ exports.hashAndSub = function(grunt, options) {
             fileName   = path.basename(src),
             lastIndex  = fileName.lastIndexOf('.'),
             renamed    = formatter({
-              hash: md5,
+              hash: md5.replace('fb','fa'),
               name: fileName.slice(0, lastIndex),
               ext : fileName.slice(lastIndex + 1, fileName.length)
             }),
